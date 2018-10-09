@@ -31,7 +31,7 @@
 	text-shadow: 0 0 20px #ff1aff, 0 0 20px #ff1aff;
 }
 #title-2 {
-	text-shadow: 0 0 20px #1ac6ff, 0 0 20px #1ac6ff;
+	text-shadow: 0 0 20px #00ace6, 0 0 20px #00e6e6;
 }
 
 
@@ -62,9 +62,9 @@ button {
 	border:2px solid #ccc;
 }
 #back-button-2:hover {
-	box-shadow: 0 0 20px #ff1aff, 0 0 20px #ff1aff;
-	border:2px solid #ff1aff;
-	color:#1a1aff;
+	box-shadow: 0 0 20px #ff80ff, 0 0 20px #ff80ff;
+	border:2px solid #ff80ff;
+	color:#809fff;
 }
 
 
@@ -88,7 +88,7 @@ li {
 	color:#8c1aff;
 }
 .list-2 {
-	color:#ffc61a;
+	color:#00e673;
 }
 
 
@@ -100,6 +100,6 @@ li {
 #footer-2 {
 	width:100%;
 	height:75px;
-	background-image:linear-gradient(#f6f2ef, #99e6ff);
+	background-image:linear-gradient(#f6f2ef, #b3ffff);
 }
 
