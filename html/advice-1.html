@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>advice 1</title>
+	<link rel="stylesheet" type="text/css" href="../css/advice.css">
+</head>
+
+<body id="body-1">
+	<a href="../index.html"><button id="back-button-1">&nbsp;Back to index&nbsp;</button></a>
+	<img id="header-images" src="../images/signs.jpg">
+	<h1 id="title-1">Advice</h1>
+	<div id="list-container">
+		<ul>
+			<li class="list-1">Someone I know commited a crime. What should I do ?</li>
+			<li class="list-1">I'm new in town. How can I make new friends ?</li>
+			<li class="list-1">How can I help a friend who has a problem with alcohol ?</li>
+			<li class="list-1">What should I do with 250,000€ that I won ?</li>
+			<li class="list-1">What can I do to improve my memory ?</li>
+			<li class="list-1">How can I change my job ?</li>
+			<li class="list-1">How can I resolve a problem I'm having with a neighbour ?</li>
+			<li class="list-1">What should I do with 1000€ I found ?</li>
+			<li class="list-1">A family member is not talking to me. What should I do ?</li>
+			<li class="list-1">How can I give up smoking ?</li>
+		</ul>
+	</div>
+	<div id="footer-1"></div>
+</body>
+
+	<script>
+		var state = 0;
+		document.body.addEventListener('click',changeState);
+		
+		var items = document.getElementsByClassName("list-1");
+		var listLength = items.length;
+		for (var i = 0; i < listLength; i++) {
+			items[i].addEventListener('mouseover', highlight);
+			items[i].addEventListener('mouseout', unhighlight);
+		}
+		
+		function changeState() {
+			if (state == 0) {
+				state = 1;
+			}
+			else {
+				state = 0;
+				for (var i = 0; i < listLength; i++) {
+					items[i].style.color = "#8c1aff";
+					//items[i].style.background = "#e8e0d8";
+				}
+			}
+		}
+		
+		function highlight() {
+			if (state == 0) {
+				this.style.color = "#e600e6";
+				//this.style.background = "#8c1aff";
+			}
+		}
+		function unhighlight () {
+			if (state == 0) {
+				this.style.color = "#8c1aff";
+				//this.style.background = "#e8e0d8";
+			}
+		}
+	</script>
+		
+</html>
