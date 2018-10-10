@@ -31,7 +31,7 @@
 	text-shadow: 0 0 20px #ff1aff, 0 0 20px #ff1aff;
 }
 #title-2 {
-	text-shadow: 0 0 20px #00cc99, 0 0 20px #00cc99;
+	text-shadow: 0 0 20px #e6af2e, 0 0 20px #e6af2e;
 }
 
 
@@ -62,9 +62,9 @@ button {
 	border:2px solid #ccc;
 }
 #back-button-2:hover {
-	box-shadow: 0 0 20px #ff99ff, 0 0 20px #ff99ff;
-	border:2px solid #ff99ff;
-	color:#809fff;
+	box-shadow: 0 0 20px #ff66ff, 0 0 20px #ff66ff;
+	border:2px solid #ffb3ff;
+	color:#ff6666;
 }
 
 
@@ -100,6 +100,6 @@ li {
 #footer-2 {
 	width:100%;
 	height:75px;
-	background-image:linear-gradient(#f6f2ef, #ccfff2);
+	background-image:linear-gradient(#f6f2ef, #f2d38d);
 }
 
