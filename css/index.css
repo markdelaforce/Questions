@@ -3,6 +3,7 @@
 	box-sizing:border-box;
 	margin:0;
 }
+
 .header-image {
 	width:100%;
 	height:250px;
@@ -11,6 +12,7 @@
 body {
 	background:#fcf6e8;
 }
+
 #title {
 	position:absolute;
 	width:100%;
@@ -24,7 +26,7 @@ body {
 .button {
 	background-image: linear-gradient(to right, #e87e38, #F1CB77, #608F50);
 	position:absolute;
-	color:#3b0e0a;
+	color:#000080;
 	width:150px;
 	border:0;
 	padding:5px;
@@ -34,7 +36,7 @@ body {
 }
 
 .button:hover {
-	color:#fff;
+	color:#e6ecff;
 	cursor:pointer;
 	padding:7px;
 	width:154px;
@@ -43,34 +45,60 @@ body {
 }
 
 .row-1 {
-	top:320px;
+	top:325px;
 }
+.row-2 {
+	top:425px;
+}
+.row-3 {
+	top:525px;
+}
+.row-4 {
+	top:625px;
+}
+.row-5 {
+	top:725px;
+}
+
 .column-1 {
-	left:calc(20% - 75px);
+	left:calc(13% - 75px);
 }
 .column-2 {
-	left:calc(40% - 75px);
+	left:calc(38% - 75px);
 }
 .column-3 {
-	left:calc(60% - 75px);
+	left:calc(62% - 75px);
 }
 .column-4 {
-	left:calc(80% - 75px);
+	left:calc(87% - 75px);
 }
 
 .row-1:hover {
-	top:318px;
+	top:323px;
 }
+.row-2:hover {
+	top:423px;
+}
+.row-3:hover {
+	top:523px;
+}
+.row-4:hover {
+	top:623px;
+}
+.row-5:hover {
+	top:723px;
+}
+
 .column-1:hover {
-	left:calc(20% - 77px)
+	left:calc(13% - 77px)
 }
 .column-2:hover {
-	left:calc(40% - 77px);
+	left:calc(38% - 77px);
 }
 .column-3:hover {
-	left:calc(60% - 77px);
+	left:calc(62% - 77px);
 }
 .column-4:hover {
-	left:calc(80% - 77px);
+	left:calc(87% - 77px);
 }
 

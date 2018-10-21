@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Breakfast</title>
+	<link rel="stylesheet" type="text/css" href="../css/breakfast.css">
+</head>
+
+<body>
+	<a href="../index.html"><button id="back-button">&nbsp;Back to index&nbsp;</button></a>
+	<img src="../images/coffee.jpg">
+	<h1>Breakfast</h1>
+	<div id="list-container">
+		<ul>
+			<li class="item">Do you drink coffee with breakfast ?</li>
+			<li class="item">What time do you usually eat breakfast ?</li>
+			<li class="item">Do you like to watch TV while you eat breakfast ?</li>
+			<li class="item">Do you have breakfast out when you are on holiday ?</li>
+			<li class="item">Do you make your own breakfast ?</li>
+			<li class="item">Have you ever eaten a full English breakfast ?</li>
+			<li class="item">Do you like the breakfast served in hotels ?</li>
+			<li class="item">What do you normally have for breakfast ?</li>
+			<li class="item">Do you like trying the breakfast of other countries ?</li>
+			<li class="item">Do you eat breakfast every day ?</li>
+			<li class="item">What did you have for breakfast when you were a child ?</li>
+			<li class="item">Do you like the same things for breakfast when on holiday ?</li>
+			<li class="item">Do you ever eat breakfast in bed ?</li>
+		</ul>
+	</div>
+	<div id="footer"></div>
+</body>
+
+	<script>
+		var state = 0;
+		document.body.addEventListener('click', changeState);
+		
+		var items = document.getElementsByClassName("item");
+		var listLength = items.length;
+		for (var i = 0; i < listLength; i++) {
+			items[i].addEventListener('mouseover', highlight);
+			items[i].addEventListener('mouseout', unhighlight);
+		}
+		
+		function changeState() {
+			if (state == 0) {
+				state = 1;
+			}
+			else {
+				state = 0;
+				for (var i = 0; i < listLength; i++) {
+					items[i].style.color = "#c289b4";
+				}
+			}
+		}
+		
+		function highlight() {
+			if (state == 0) {
+				this.style.color = "#62819d";
+			}
+		}
+		function unhighlight () {
+			if (state == 0) {
+				this.style.color = "#c289b4";
+			}
+		}
+	</script>
+		
+</html>
