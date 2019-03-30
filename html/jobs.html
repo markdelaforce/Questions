@@ -30,39 +30,7 @@
 	<div id="footer"></div>
 </body>
 
-	<script>
-		var state = 0;
-		document.body.addEventListener('click', changeState);
-		
-		var items = document.getElementsByClassName("item");
-		var listLength = items.length;
-		for (var i = 0; i < listLength; i++) {
-			items[i].addEventListener('mouseover', highlight);
-			items[i].addEventListener('mouseout', unhighlight);
-		}
-		
-		function changeState() {
-			if (state == 0) {
-				state = 1;
-			}
-			else {
-				state = 0;
-				for (var i = 0; i < listLength; i++) {
-					items[i].style.color = "#2b8bc9";
-				}
-			}
-		}
-		
-		function highlight() {
-			if (state == 0) {
-				this.style.color = "#28bd64";
-			}
-		}
-		function unhighlight () {
-			if (state == 0) {
-				this.style.color = "#2b8bc9";
-			}
-		}
-	</script>
+<script>sessionStorage.setItem('page', 'jobs');</script>
+<script src='../javascript/text-highlight.js'></script>
 		
 </html>
