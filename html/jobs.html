@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Jobs</title>
+	<link rel="stylesheet" type="text/css" href="../css/jobs.css">
+</head>
+
+<body>
+	<a href="../index.html"><button>&nbsp;Back to index&nbsp;</button></a>
+	<img src="../images/cityscape.jpg">
+	<h1>Jobs</h1>
+	<div id="list-container">
+		<ul>
+			<li class="item">What jobs exist now that didn't exist in the past ?'</li>
+			<li class="item">Which jobs do you think will dissappear in the future ?</li>
+			<li class="item">What new jobs will there be in 50 years time ?</li>
+			<li class="item">Which jobs do you think would be the best and why ?</li>
+			<li class="item">How does working in a big city compare with a smaller town ?</li>
+			<li class="item">Which jobs do you think would be the worst and why ?</li>
+			<li class="item">What jobs do you think will never disappear ?</li>
+			<li class="item">How do different country's working conditions compare with Spain ?</li>
+			<li class="item">How did you start working in your current job ?</li>
+			<li class="item">Would you like to work in another country ?</li>
+			<li class="item">Have you ever been unemployed ?</li>
+			<li class="item">What was your fist job ?</li>
+			<li class="item">What skills would you like to learn to help in your job ?</li>
+		</ul>
+	</div>
+	<div id="footer"></div>
+</body>
+
+	<script>
+		var state = 0;
+		document.body.addEventListener('click', changeState);
+		
+		var items = document.getElementsByClassName("item");
+		var listLength = items.length;
+		for (var i = 0; i < listLength; i++) {
+			items[i].addEventListener('mouseover', highlight);
+			items[i].addEventListener('mouseout', unhighlight);
+		}
+		
+		function changeState() {
+			if (state == 0) {
+				state = 1;
+			}
+			else {
+				state = 0;
+				for (var i = 0; i < listLength; i++) {
+					items[i].style.color = "#2b8bc9";
+				}
+			}
+		}
+		
+		function highlight() {
+			if (state == 0) {
+				this.style.color = "#28bd64";
+			}
+		}
+		function unhighlight () {
+			if (state == 0) {
+				this.style.color = "#2b8bc9";
+			}
+		}
+	</script>
+		
+</html>
