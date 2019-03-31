@@ -1,17 +1,4 @@
-body {
-	background:#e8e0d8;
-}
 
-h1 {
-	color:#fff;
-	text-shadow: 0 0 20px #ff1aff, 0 0 20px #ff1aff;
-}
-
-button {
-	background:#fff;
-	color:#999;			
-	border:2px solid #ccc;
-}
 button:hover {
 	box-shadow: 0 0 20px #ffff00, 0 0 20px #ffff00;
 	border:2px solid #ffff00;
