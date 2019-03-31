@@ -5,10 +5,6 @@ button:hover {
 	color:#0e6ba8;
 }
 
-li {
-	list-style:none;
-}
-
 #footer {
 	background-image: linear-gradient(#cbcbcb, #8bc4f4);
 }
