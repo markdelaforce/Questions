@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family:Architects Daughter;
+  src: url(../../../fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf);
+}
 
 body {
 	margin-bottom:50px;
