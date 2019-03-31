@@ -1,68 +1,28 @@
-
-* {
-	box-sizing:border-box;
-	margin:0;
-}
-
 body {
 	background:#cbcbcb;
 }
 
-img {
-	width:100%;
-	height:250px;
-}
-
 h1 {
-	font-size:50px;
-	text-align:center;
-	margin-top:20px;
-	margin-bottom:15px;
-	text-shadow: 0 0 20px #3c9cec, 0 0 20px #3c9cec;
 	color:#fff;
-	cursor:default;
+	text-shadow: 0 0 20px #3c9cec, 0 0 20px #3c9cec;
 }
 
 button {
-	position:absolute;
-	top:270px;
-	left:30px;
-	font-size:20px;
-	padding:5px 10px;
 	background:#fff;
 	color:#999;			
 	border:2px solid #ccc;
-	border-radius:5px;
 }
-
 button:hover {
 	box-shadow: 0 0 20px #a2aebb, 0 0 20px #a2aebb;
 	border:2px solid #a2aebb;
 	color:#0e6ba8;
-	cursor:pointer;
-}
-
-#list-container {
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-}
-
-ul {
-	text-align:center;
-	margin-bottom:20px;
-	cursor:default;
 }
 
 li {
-	color:#2d3b55;
-	font-size:26px;
 	list-style:none;
 }
 
 #footer {
-	width:100%;
-	height:75px;
 	background-image: linear-gradient(#cbcbcb, #8bc4f4);
 }
 
